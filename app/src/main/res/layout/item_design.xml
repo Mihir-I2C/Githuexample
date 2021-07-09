@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="30dp"
+            android:id="@+id/imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/imageview1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            tools:ignore="NotSibling">
+
+        </TextView>
+        <TextView
+            android:layout_below="@+id/id"
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Firstname"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="NotSibling">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@+id/firstname"
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lastname"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/imageview"
+            android:layout_marginLeft="20dp"
+            tools:ignore="NotSibling">
+
+        </TextView>
+        <TextView
+            android:layout_below="@+id/lastname"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="email"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:layout_marginLeft="20dp"
+            tools:ignore="NotSibling">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
